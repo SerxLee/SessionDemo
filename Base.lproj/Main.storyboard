@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SessionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLh-94-zRU">
+                                <rect key="frame" x="18" y="550" width="51" height="30"/>
+                                <state key="normal" title="resume"/>
+                                <connections>
+                                    <action selector="resumeTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tg7-Xn-2MI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nex-Wd-g0D">
+                                <rect key="frame" x="279" y="550" width="42" height="30"/>
+                                <state key="normal" title="pause"/>
+                                <connections>
+                                    <action selector="pauseTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaW-1R-gbe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuA-kc-sBa">
+                                <rect key="frame" x="535" y="550" width="45" height="30"/>
+                                <state key="normal" title="cancel"/>
+                                <connections>
+                                    <action selector="cancelTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5B-iD-7qL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YuA-kc-sBa" firstAttribute="leading" secondItem="nex-Wd-g0D" secondAttribute="trailing" constant="214" id="3vf-oV-6p6"/>
+                            <constraint firstItem="nex-Wd-g0D" firstAttribute="leading" secondItem="FLh-94-zRU" secondAttribute="trailing" constant="210" id="L1d-L8-PaF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YuA-kc-sBa" secondAttribute="bottom" constant="20" id="L1v-Fj-AWJ"/>
+                            <constraint firstItem="nex-Wd-g0D" firstAttribute="leading" secondItem="FLh-94-zRU" secondAttribute="trailing" constant="210" id="RGf-0u-UgY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nex-Wd-g0D" secondAttribute="bottom" constant="20" id="WnK-hv-7IB"/>
+                            <constraint firstItem="YuA-kc-sBa" firstAttribute="leading" secondItem="nex-Wd-g0D" secondAttribute="trailing" constant="214" id="b8d-gq-b7v"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FLh-94-zRU" secondAttribute="bottom" constant="20" id="cao-VZ-Jbj"/>
+                            <constraint firstItem="YuA-kc-sBa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="m3n-Sj-G2Z"/>
+                            <constraint firstItem="FLh-94-zRU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-2" id="ufM-IB-IWI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
